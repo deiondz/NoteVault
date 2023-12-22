@@ -2,7 +2,7 @@ import React from "react";
 import data from "@data/semester.json";
 import Content from "@components/Content";
 
-function Page({ params }) {
+function Course({ params }) {
   const pageData = data.find((page) => page.slug === params.slug);
   return (
     <div className="flex w-full px-5  md:px-32 flex-col items-center justify-center min-h-[87vh]">
@@ -14,4 +14,4 @@ function Page({ params }) {
   );
 }
 
-export default Page;
+export default Course;

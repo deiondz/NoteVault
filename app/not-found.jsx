@@ -11,7 +11,7 @@ export default function Custom404() {
         changed, or is temporarily unavailable.
       </p>
       <Link isExternal showAnchorIcon className="text-teal-400" href="/">
-        Go back to the home page
+        <a>Go back to the home page</a>
       </Link>
     </div>
   );
