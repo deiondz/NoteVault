@@ -48,6 +48,7 @@ export default function Content(props) {
         <Sidebar courseSelected={courseSelected} />
       ) : (
         <Drawer
+          width={600}
           style={{
             padding: 0,
             backgroundColor: "#242C2F",
@@ -55,9 +56,10 @@ export default function Content(props) {
           bodyStyle={{
             padding: 0,
             height: "100%",
+            fontFamily: "__Poppins_b809fa, __Poppins_Fallback_b809fa",
           }}
           placement="right"
-          closable={false}
+          closable={true}
           onClose={onOpenChange}
           open={isOpen}
         >

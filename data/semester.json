@@ -6,18 +6,22 @@
     "courses": [
       {
         "name": "Fundamentals of Computer Science",
+        "href": "/courses/sem-1/fundamentals-of-computer-science",
         "description": "Fundamental principles and concepts of computer science."
       },
       {
         "name": "C Programming",
+        "href": "/courses/sem-1/c-programming",
         "description": "Introduction to the C programming language, covering syntax, data structures, and algorithms."
       },
       {
         "name": "Business Statistics",
+        "href": "/courses/sem-1/business-statistics",
         "description": "Statistical methods and tools for business decision-making, including data analysis and hypothesis testing."
       },
       {
         "name": "Mathematical Foundation",
+        "href": "/courses/sem-1/mathematical-foundation",
         "description": "Foundational mathematics covering key concepts essential for various academic disciplines."
       }
     ]
@@ -29,18 +33,22 @@
     "courses": [
       {
         "name": "Data Structures using C",
+        "href": "/courses/sem-2/data-structures-using-c",
         "description": "Study of fundamental data structures and their implementation using the C programming language."
       },
       {
         "name": "Object Oriented Concepts using JAVA",
+        "href": "/courses/sem-2/object-oriented-concepts-using-java",
         "description": "Introduction to object-oriented programming concepts using the JAVA programming language."
       },
       {
         "name": "Discrete Mathematical Structures",
+        "href": "/courses/sem-2/discrete-mathematical-structures",
         "description": "Exploration of discrete mathematical concepts, including logic, set theory, and graph theory."
       },
       {
         "name": "Applied Statistics",
+        "href": "/courses/sem-2/applied-statistics",
         "description": "Application of statistical methods to real-world problems, emphasizing practical data analysis and interpretation."
       }
     ]
@@ -52,18 +60,22 @@
     "courses": [
       {
         "name": "Database Management System",
+        "href": "/courses/sem-3/database-management-system",
         "description": "Study of principles and techniques for designing, implementing, and managing database systems."
       },
       {
         "name": "C# and DOTNET Framework",
+        "href": "/courses/sem-3/c-sharp-and-dotnet-framework",
         "description": "Comprehensive exploration of the C# programming language and the DOTNET framework for building Windows applications."
       },
       {
         "name": "Operating System Concepts",
+        "href": "/courses/sem-3/operating-system-concepts",
         "description": "Introduction to fundamental concepts and principles underlying modern operating systems."
       },
       {
         "name": "Computer Oriented Numeric Analysis",
+        "href": "/courses/sem-3/computer-oriented-numeric-analysis",
         "description": "Application of numerical methods to solve mathematical problems using computers, emphasizing algorithm development and analysis."
       }
     ]
@@ -75,18 +87,22 @@
     "courses": [
       {
         "name": "Python Programming",
+        "href": "/courses/sem-4/python-programming",
         "description": "Introduction to the Python programming language, covering syntax, data structures, and basic programming concepts."
       },
       {
         "name": "Computer Multimedia & Animation",
+        "href": "/courses/sem-4/computer-multimedia-and-animation",
         "description": "Exploration of multimedia principles and animation techniques, including graphics, audio, and video."
       },
       {
         "name": "Computer Communication & Networks",
+        "href": "/courses/sem-4/computer-communication-and-networks",
         "description": "Study of computer networks, communication protocols, and the principles of data transmission."
       },
       {
         "name": "OE (Operating Environment)",
+        "href": "/courses/sem-4/oe-operating-environment",
         "description": "Overview of the operating environment, including system configuration, file management, and user interfaces."
       }
     ]
@@ -98,18 +114,22 @@
     "courses": [
       {
         "name": "Internet Technologies",
+        "href": "/courses/sem-5/internet-technologies",
         "description": "Examination of technologies and protocols underlying the Internet, including web development, networking, and security."
       },
       {
         "name": "Statistical Computing & R Programming",
+        "href": "/courses/sem-5/statistical-computing-and-r-programming",
         "description": "Application of statistical methods using the R programming language, emphasizing data analysis and visualization."
       },
       {
         "name": "Software Engineering",
+        "href": "/courses/sem-5/software-engineering",
         "description": "Comprehensive study of software development processes, methodologies, and best practices."
       },
       {
         "name": "Cyber Security",
+        "href": "/courses/sem-5/cyber-security",
         "description": "Exploration of principles and practices for securing computer systems and networks against cyber threats and attacks."
       }
     ]
@@ -121,10 +141,12 @@
     "courses": [
       {
         "name": "PHP & MySQL",
+        "href": "/courses/sem-6/php-and-mysql",
         "description": "In-depth study of web development using PHP programming language and MySQL database management system."
       },
       {
         "name": "Artificial Intelligence & Machine Learning",
+        "href": "/courses/sem-6/artificial-intelligence-and-machine-learning",
         "description": "Exploration of artificial intelligence and machine learning concepts, algorithms, and applications in computer systems."
       }
     ]
