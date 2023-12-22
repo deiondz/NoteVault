@@ -1,14 +1,15 @@
 import { Button, Input } from "@nextui-org/react";
 import { SendHorizontal } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-[90vh] ">
+    <div className="flex flex-col items-center justify-center h-[80vh]">
       <div className="flex flex-col items-center justify-center w-full p-5 py-20 space-y-8">
         <h1 className="text-4xl font-semibold tracking-tight text-center md:text-6xl ">
           College note repo, but better.
         </h1>
-        <div className="flex items-center justify-center w-[60%] gap-3">
+        <div className="flex items-center justify-center w-full md:w-[60%] gap-3">
           <Input
             placeholder="Find Notes for your subject..."
             classNames={{
@@ -37,9 +38,11 @@ export default function Home() {
           />
         </div>
         <div>
-          <Button className="bg-[#0071E3]" variant="shadow" auto>
-            Get Started
-          </Button>
+          <Link href="/semester">
+            <Button className="bg-[#0071E3]" variant="shadow" auto>
+              Get Started
+            </Button>
+          </Link>
         </div>
       </div>
       <div>

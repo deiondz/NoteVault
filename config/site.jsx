@@ -5,11 +5,11 @@ export const siteConfig = {
   navItems: [
     {
       label: "Notes",
-      href: "/",
+      href: "/semester",
     },
     {
       label: "Question Paper",
-      href: "/qp",
+      href: "/questionpaper",
     },
 
     {
@@ -23,17 +23,21 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Notes",
+      href: "/semester",
+    },
+    {
+      label: "Question Paper",
+      href: "/questionpaper",
     },
 
     {
-      label: "About",
-      href: "/about",
+      label: "Contribution",
+      href: "/contribution",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "About",
+      href: "/about",
     },
   ],
   links: {
