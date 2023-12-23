@@ -147,10 +147,6 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        <div className="pt-10">
-          <SearchBar onOpen={onOpen} />
-        </div>
-
         <div className="flex flex-col gap-2 mx-4 mt-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
