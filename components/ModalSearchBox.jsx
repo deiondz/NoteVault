@@ -34,9 +34,10 @@ export default function ModalSearchBox(props) {
   console.log(active);
   return (
     <Modal
+      placement="center"
       hideCloseButton
       size="3xl"
-      className="max-h-[80vh]"
+      className="max-h-[80vh] m-5"
       isOpen={props.isOpen}
       onClose={props.onClose}
       scrollBehavior="inside"

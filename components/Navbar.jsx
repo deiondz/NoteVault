@@ -38,6 +38,25 @@ import {
 } from "@/components/icons";
 import ModalSearchBox from "./ModalSearchBox";
 
+export function SearchBar(props) {
+  return (
+    <Button
+      color="default"
+      fullWidth
+      startContent={
+        <SearchIcon className="flex-shrink-0 text-base pointer-events-none text-default-400" />
+      }
+      className="flex items-center justify-center px-10 text-sm font-normal text-default-600 bg-default-100"
+      endContent={<Kbd keys={["command"]}>K</Kbd>}
+      onClick={() => {
+        props.onOpen();
+      }}
+    >
+      Quick Search
+    </Button>
+  );
+}
+
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -103,20 +122,7 @@ export const Navbar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden gap-2 md:flex">
-          <Button
-            color="default"
-            fullWidth
-            startContent={
-              <SearchIcon className="flex-shrink-0 text-base pointer-events-none text-default-400" />
-            }
-            className="flex items-center justify-center px-10 text-sm font-normal text-default-600 bg-default-100"
-            endContent={<Kbd keys={["command"]}>K</Kbd>}
-            onClick={() => {
-              onOpen();
-            }}
-          >
-            Quick Search
-          </Button>
+          <SearchBar onOpen={onOpen} />
           <Tooltip content="Double tap Double tap">
             <Button
               isExternal
@@ -141,7 +147,10 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        {searchInput}
+        <div className="pt-10">
+          <SearchBar onOpen={onOpen} />
+        </div>
+
         <div className="flex flex-col gap-2 mx-4 mt-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
