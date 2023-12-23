@@ -14,8 +14,12 @@ export const fontSans = FontSans({
 });
 
 export const metadata = {
-  title: "CollegeRep",
-  description: "For educational purposes",
+  title: {
+    default: "CollegeRep",
+    template: `%s | CollegeRep`,
+  },
+  description:
+    "NoteVault is here to elevate your learning journey with a comprehensive and user-friendly repository designed exclusively for St. Aloysius students.  ",
 };
 
 export default function RootLayout({ children }) {

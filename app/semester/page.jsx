@@ -1,7 +1,9 @@
 import React from "react";
 import data from "@data/semester.json";
 import Card from "@components/Card";
-
+export const metadata = {
+  title: "Semester ",
+};
 function SemesterPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[87vh]">

@@ -1,7 +1,9 @@
 import InputBox from "@components/HeroInput";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
-
+export const metadata = {
+  title: "Home | NoteVault",
+};
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-[80vh]">
@@ -13,7 +15,7 @@ export default function Home() {
           <span className="text-[#ceff48] font-semibold">NoteVault</span> is
           here to elevate your learning journey with a comprehensive and
           user-friendly repository designed exclusively for St. Aloysius
-          students.
+          students by the students.
         </p>
         {/* <InputBox /> */}
         <div>

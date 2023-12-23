@@ -1,6 +1,11 @@
 import axios from "axios";
 import Link from "next/link";
 import React from "react";
+
+export const metadata = {
+  title: "Question Papers",
+};
+
 async function getData() {
   try {
     const response = await axios.get(
