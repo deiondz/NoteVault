@@ -1,3 +1,4 @@
+"use client";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -10,8 +11,18 @@ import {
 import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
+import { CiSearch } from "react-icons/ci";
+
 import { Input } from "@nextui-org/input";
-import { Tooltip } from "@nextui-org/react";
+import {
+  Divider,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalHeader,
+  Tooltip,
+  useDisclosure,
+} from "@nextui-org/react";
 import { link as linkStyles } from "@nextui-org/theme";
 
 import { siteConfig } from "@/config/site";
@@ -25,8 +36,11 @@ import {
   HeartFilledIcon,
   SearchIcon,
 } from "@/components/icons";
+import ModalSearchBox from "./ModalSearchBox";
 
 export const Navbar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   const searchInput = (
     <Input
       aria-label="Search"
@@ -88,11 +102,26 @@ export const Navbar = () => {
             <DiscordIcon className="text-default-500" />
           </Link>
         </NavbarItem>
-        <NavbarItem className="hidden md:flex">
+        <NavbarItem className="hidden gap-2 md:flex">
+          <Button
+            color="default"
+            fullWidth
+            startContent={
+              <SearchIcon className="flex-shrink-0 text-base pointer-events-none text-default-400" />
+            }
+            className="flex items-center justify-center px-10 text-sm font-normal text-default-600 bg-default-100"
+            endContent={<Kbd keys={["command"]}>K</Kbd>}
+            onClick={() => {
+              onOpen();
+            }}
+          >
+            Quick Search
+          </Button>
           <Tooltip content="Double tap Double tap">
             <Button
               isExternal
               as={Link}
+              fullWidth
               className="flex items-center justify-center text-sm font-normal text-default-600 bg-default-100"
               href={siteConfig.links.sponsor}
               startContent={<HeartFilledIcon className="text-danger" />}
@@ -133,6 +162,7 @@ export const Navbar = () => {
           ))}
         </div>
       </NavbarMenu>
+      <ModalSearchBox isOpen={isOpen} onClose={onClose} />
     </NextUINavbar>
   );
 };

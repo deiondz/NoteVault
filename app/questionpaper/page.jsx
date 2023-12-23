@@ -1,12 +1,3 @@
-import Card from "@components/Card";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableColumn,
-  TableHeader,
-  TableRow,
-} from "@nextui-org/react";
 import axios from "axios";
 import Link from "next/link";
 import React from "react";
@@ -23,50 +14,9 @@ async function getData() {
     throw new Error("Failed to fetch data");
   }
 }
-const columns = [
-  {
-    key: "name",
-    label: "NAME",
-  },
-  {
-    key: "role",
-    label: "ROLE",
-  },
-  {
-    key: "status",
-    label: "STATUS",
-  },
-];
-const rows = [
-  {
-    key: "1",
-    name: "Tony Reichert",
-    role: "CEO",
-    status: "Active",
-  },
-  {
-    key: "2",
-    name: "Zoey Lang",
-    role: "Technical Lead",
-    status: "Paused",
-  },
-  {
-    key: "3",
-    name: "Jane Fisher",
-    role: "Senior Developer",
-    status: "Active",
-  },
-  {
-    key: "4",
-    name: "William Howard",
-    role: "Community Manager",
-    status: "Vacation",
-  },
-];
 
 async function Page() {
   const data = await getData();
-  console.log(data);
   return (
     <div className="flex flex-col px-5 py-10  md:px-32 items-center justify-center min-h-[87vh]">
       <h1 className="self-start pb-10 text-4xl font-bold tracking-tight ">
