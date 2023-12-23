@@ -2,6 +2,35 @@ export const siteConfig = {
   name: "Codex.js",
   description:
     "At Codex, we are passionate about transforming ideas into reality through the power of code. With expertise in web and Flutter app development, we bring innovation and precision to every project. Whether you're dreaming of a dynamic web application or a cutting-edge Flutter mobile app, we're here to turn your vision into a digital masterpiece.",
+  AboutTeam: [
+    {
+      name: "Jonathan Correa",
+      role: "Backend Developer",
+      description:
+        "Contributed in the REST API development.Fast and efficent REST api developed using Flask Python.",
+      image: "/john.jpg",
+      github: "https://github.com/TheJonathanC",
+      twitter: "https://twitter.com/jona10_py",
+    },
+    {
+      name: "Deion D'Souza",
+      role: "Front-End developer",
+      description:
+        "Contributed in the Front-End development. Developed the UI using Next.js and Tailwind CSS.",
+      image: "/deion.jpg",
+      github: "https://github.com/deiondz",
+      twitter: "https://twitter.com/Deion_Dz",
+    },
+    {
+      name: "Manvith M",
+      role: "UI/UX Designer",
+      description:
+        "Contributed in the UI/UX design. Designed the UI using Figma and collabratively worked with the Front-End team.",
+      image: "/manvith.jpg",
+      github: "https://github.com/ManvithLolxD",
+      twitter: "https://twitter.com/ManvithxD",
+    },
+  ],
   navItems: [
     {
       label: "Notes",
