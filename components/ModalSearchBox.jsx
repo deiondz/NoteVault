@@ -31,13 +31,12 @@ export default function ModalSearchBox(props) {
   useEffect(() => {
     handleSearch();
   }, [value]);
-  console.log(active);
   return (
     <Modal
       placement="center"
       hideCloseButton
       size="3xl"
-      className="max-h-[80vh] m-5"
+      className="max-h-[80vh] m-2"
       isOpen={props.isOpen}
       onClose={props.onClose}
       scrollBehavior="inside"
