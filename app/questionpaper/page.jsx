@@ -24,26 +24,28 @@ async function Page() {
   const data = await getData();
   return (
     <div className="flex flex-col px-5 py-10  md:px-32 items-center justify-center min-h-[87vh]">
-      <h1 className="self-start pb-10 text-4xl font-bold tracking-tight ">
-        BCA Question papers
-      </h1>
-      {Object.entries(data).map(([semester, papers]) => (
-        <div key={semester}>
-          <div className="grid items-start justify-center h-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-            {Object.entries(papers).map(([exam, link]) => (
-              <Link
-                href={link}
-                key={exam}
-                target="_blank"
-                className="h-full p-5 transition-all rounded-md hover:brightness-150 hover:ring-2 bg-slate-800"
-                rel="noopener noreferrer"
-              >
-                <p>{exam}</p>
-              </Link>
-            ))}
+      <div>
+        <h1 className="self-start pb-10 text-4xl font-bold tracking-tight ">
+          BCA Question papers
+        </h1>
+        {Object.entries(data).map(([semester, papers]) => (
+          <div key={semester}>
+            <div className="grid items-start justify-center h-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+              {Object.entries(papers).map(([exam, link]) => (
+                <Link
+                  href={link}
+                  key={exam}
+                  target="_blank"
+                  className="h-full p-5 transition-all rounded-md hover:brightness-150 hover:ring-2 bg-slate-800"
+                  rel="noopener noreferrer"
+                >
+                  <p>{exam}</p>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
