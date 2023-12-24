@@ -33,7 +33,7 @@ function Github(props) {
 function Page() {
   return (
     <div className="flex w-full px-5  py-10 md:px-32 flex-col items-center justify-center min-h-[87vh]">
-      <section className="max-w-3xl mx-auto">
+      <section className="mx-auto max-w-7xl">
         <h1 className="mb-5 text-4xl font-bold md:text-6xl">About Us</h1>
         <p className="mb-6 text-gray-300">
           Welcome to NoteVault, your centralized haven for academic notes! We, a
@@ -53,19 +53,16 @@ function Page() {
 
         <section className="mt-8">
           <h2 className="mb-5 text-4xl font-bold md:text-6xl">Our Team</h2>
-          <div className="grid max-w-full grid-cols-12 grid-rows-2 gap-5 ">
+          <div className="flex flex-col max-w-full gap-5 xl:flex-row ">
             {siteConfig.AboutTeam.map((e, index) => (
-              <Card
-                key={index}
-                className="h-full col-span-12 p-0 sm:col-span-12"
-              >
+              <Card key={index} className="max-w-sm p-0 h-[60%]">
                 <CardBody className="w-full p-0">
-                  <div className="flex flex-col items-stretch justify-between w-full h-full md:flex-row ">
-                    <div className="w-full h-full md:w-1/2">
+                  <div className="flex flex-col items-stretch justify-between w-full h-full ">
+                    <div className="w-full h-full ">
                       <Image
                         unoptimized
                         src={e.image}
-                        className="object-cover w-full h-full rounded-none "
+                        className="object-cover h-full rounded-none aspect-square "
                         width={500}
                         height={200}
                       />

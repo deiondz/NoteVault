@@ -113,9 +113,9 @@
     "slug": "sem-5",
     "courses": [
       {
-        "name": "Internet Technologies",
+        "name": "Design and Analysis of Algorithms",
         "href": "/courses/sem-5/internet-technologies",
-        "description": "Examination of technologies and protocols underlying the Internet, including web development, networking, and security."
+        "description": "Designing and developing  of Algorithms"
       },
       {
         "name": "Statistical Computing & R Programming",
