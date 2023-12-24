@@ -58,7 +58,7 @@ function Page() {
             isExternal
             anchorIcon={true}
             className="text-blue-500 "
-            href="https://forms.gle/6Z6Z1Z6Z6Z6Z6Z6Z6"
+            href="https://forms.gle/Y2BxFxL4KVacbNmB8"
           >
             <Button className="bg-blue-600 "> Google Form </Button>
           </Link>
