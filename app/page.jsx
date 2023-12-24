@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center h-[80vh]">
       <div className="flex flex-col items-center justify-center w-full p-5 py-20 space-y-8">
         <h1 className="text-4xl font-extrabold text-center md:text-7xl ">
-          College note repo, but better.
+          College Notes Repo, But Better!
         </h1>
         <p className="w-full font-medium text-center md:w-1/2 ">
           <span className="text-[#ceff48] font-semibold">NoteVault</span> is
