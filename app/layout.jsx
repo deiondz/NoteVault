@@ -15,8 +15,8 @@ export const fontSans = FontSans({
 
 export const metadata = {
   title: {
-    default: "CollegeRep",
-    template: `%s | CollegeRep`,
+    default: "NoteVault",
+    template: `%s | NoteVault`,
   },
   description:
     "NoteVault is here to elevate your learning journey with a comprehensive and user-friendly repository designed exclusively for St. Aloysius students.  ",

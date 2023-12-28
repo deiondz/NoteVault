@@ -1,3 +1,4 @@
+import { Input } from "@nextui-org/react";
 import axios from "axios";
 import Link from "next/link";
 import React from "react";
@@ -9,7 +10,7 @@ export const metadata = {
 async function getData() {
   try {
     const response = await axios.get(
-      "https://expaper-api.onrender.com/exampapers?code=178"
+      "https://alopapers.onrender.com/exampapers"
     );
     // handle success
     return response.data; // Assuming the response is a JSON object and you want to return its data
@@ -22,14 +23,16 @@ async function getData() {
 
 async function Page() {
   const data = await getData();
+  console.log(data);
   return (
-    <div className="flex flex-col px-5 py-10  md:px-32 items-center justify-center min-h-[87vh]">
-      <div>
-        <h1 className="self-start pb-10 text-4xl font-bold tracking-tight ">
-          BCA Question papers
-        </h1>
-        {Object.entries(data).map(([semester, papers]) => (
-          <div key={semester}>
+    <div className="flex flex-col px-5 py-10 gap-10  md:px-32 items-center justify-center min-h-[87vh]">
+      {Object.entries(data).map(([semester, papers]) => (
+        <div key={semester}>
+          <h1 className="self-start pb-10 text-4xl font-bold tracking-tight ">
+            {semester.toUpperCase()} Question papers
+          </h1>
+
+          <div>
             <div className="grid items-start justify-center h-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
               {Object.entries(papers).map(([exam, link]) => (
                 <Link
@@ -44,8 +47,8 @@ async function Page() {
               ))}
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }
