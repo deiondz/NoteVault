@@ -35,19 +35,49 @@ export const siteConfig = {
     {
       label: "Notes",
       href: "/semester",
+      dropdown: false,
     },
     {
       label: "Question Paper",
       href: "/questionpaper",
+      dropdown: true,
+      dropdownItem: [
+        {
+          item: "All",
+          href: "/questionpaper",
+        },
+        {
+          item: "BA",
+          href: "/questionpaper/#BA",
+        },
+        {
+          item: "BBA",
+          href: "/questionpaper/#BBA",
+        },
+        {
+          item: "BCA ",
+          href: "/questionpaper/#BCA ",
+        },
+        {
+          item: "BCOM",
+          href: "/questionpaper/#BCOM",
+        },
+        {
+          item: "BCOM",
+          href: "/questionpaper/#BSC",
+        },
+      ],
     },
 
     {
       label: "Contribution",
       href: "/contribution",
+      dropdown: false,
     },
     {
       label: "About",
       href: "/about",
+      dropdown: false,
     },
   ],
   navMenuItems: [

@@ -16,6 +16,10 @@ import { CiSearch } from "react-icons/ci";
 import { Input } from "@nextui-org/input";
 import {
   Divider,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
   Modal,
   ModalBody,
   ModalContent,
@@ -92,20 +96,54 @@ export const Navbar = () => {
           </NextLink>
         </NavbarBrand>
         <ul className="justify-start hidden gap-4 ml-2 lg:flex">
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <NextLink
-                className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium text-sm"
-                )}
-                color="foreground"
-                href={item.href}
-              >
-                {item.label}
-              </NextLink>
-            </NavbarItem>
-          ))}
+          {siteConfig.navItems.map((item) =>
+            item.dropdown ? (
+              <NavbarItem key={item.href}>
+                <Dropdown>
+                  <DropdownTrigger className="h-3 p-0">
+                    <h1
+                      className={clsx(
+                        linkStyles({ color: "foreground" }),
+                        "data-[active=true]:text-primary data-[active=true]:font-medium text-sm cursor-pointer"
+                      )}
+                      color="foreground"
+                      href={item.href}
+                    >
+                      {item.label}
+                    </h1>
+                  </DropdownTrigger>
+                  <DropdownMenu
+                    aria-label="Single selection example"
+                    variant="flat"
+                    disallowEmptySelection
+                    selectionMode="single"
+                  >
+                    {item.dropdownItem.map((dropdownItem, index) => (
+                      <DropdownItem
+                        key={dropdownItem.index}
+                        href={dropdownItem.href}
+                      >
+                        {dropdownItem.item}
+                      </DropdownItem>
+                    ))}
+                  </DropdownMenu>
+                </Dropdown>
+              </NavbarItem>
+            ) : (
+              <NavbarItem key={item.href}>
+                <NextLink
+                  className={clsx(
+                    linkStyles({ color: "foreground" }),
+                    "data-[active=true]:text-primary data-[active=true]:font-medium text-sm"
+                  )}
+                  color="foreground"
+                  href={item.href}
+                >
+                  {item.label}
+                </NextLink>
+              </NavbarItem>
+            )
+          )}
         </ul>
       </NavbarContent>
 
@@ -148,23 +186,51 @@ export const Navbar = () => {
 
       <NavbarMenu>
         <div className="flex flex-col gap-2 mx-4 mt-2">
-          {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
-                href={item.href}
-                size="lg"
-              >
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
+          {siteConfig.navItems.map((item) =>
+            item.dropdown ? (
+              <NavbarMenuItem key={item.href}>
+                <Dropdown>
+                  <DropdownTrigger className="h-3 p-0">
+                    <h1
+                      className={clsx(
+                        linkStyles({ color: "foreground" }),
+                        "data-[active=true]:text-primary data-[active=true]:font-medium text-lg cursor-pointer"
+                      )}
+                      color="foreground"
+                      href={item.href}
+                    >
+                      {item.label}
+                    </h1>
+                  </DropdownTrigger>
+                  <DropdownMenu
+                    aria-label="Single selection example"
+                    variant="flat"
+                    disallowEmptySelection
+                    selectionMode="single"
+                  >
+                    {item.dropdownItem.map((dropdownItem, index) => (
+                      <DropdownItem key={index} href={dropdownItem.href}>
+                        {dropdownItem.item}
+                      </DropdownItem>
+                    ))}
+                  </DropdownMenu>
+                </Dropdown>
+              </NavbarMenuItem>
+            ) : (
+              <NavbarItem key={item.href}>
+                <NextLink
+                  className={clsx(
+                    linkStyles({ color: "foreground" }),
+                    "data-[active=true]:text-primary data-[active=true]:font-medium text-lg"
+                  )}
+                  color="foreground"
+                  href={item.href}
+                >
+                  {item.label}
+                </NextLink>
+              </NavbarItem>
+            )
+          )}
         </div>
       </NavbarMenu>
       <ModalSearchBox isOpen={isOpen} onClose={onClose} />

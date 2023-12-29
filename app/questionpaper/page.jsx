@@ -1,4 +1,11 @@
-import { Input } from "@nextui-org/react";
+import {
+  Button,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
+  Input,
+} from "@nextui-org/react";
 import axios from "axios";
 import Link from "next/link";
 import React from "react";
@@ -23,11 +30,11 @@ async function getData() {
 
 async function Page() {
   const data = await getData();
-  console.log(data);
+
   return (
     <div className="flex flex-col px-5 py-10 gap-10  md:px-32 items-center justify-center min-h-[87vh]">
       {Object.entries(data).map(([semester, papers]) => (
-        <div key={semester}>
+        <div key={semester} id={`${semester.toUpperCase()}`}>
           <h1 className="self-start pb-10 text-4xl font-bold tracking-tight ">
             {semester.toUpperCase()} Question papers
           </h1>

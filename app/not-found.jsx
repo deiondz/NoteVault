@@ -10,7 +10,7 @@ export default function Custom404() {
         The page you are looking for might have been removed, had its name
         changed, or is temporarily unavailable.
       </p>
-      <Link isExternal showAnchorIcon className="text-teal-400" href="/">
+      <Link showAnchorIcon className="text-teal-400" href="/">
         <a>Go back to the home page</a>
       </Link>
     </div>
