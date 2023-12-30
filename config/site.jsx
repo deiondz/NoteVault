@@ -63,7 +63,7 @@ export const siteConfig = {
           href: "/questionpaper/#BCOM",
         },
         {
-          item: "BCOM",
+          item: "BSc",
           href: "/questionpaper/#BSC",
         },
       ],
