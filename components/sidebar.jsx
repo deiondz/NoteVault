@@ -26,7 +26,7 @@ function Sidebar({ courseSelected }) {
         </p>
       </CardBody>
       <CardFooter className="flex justify-between w-full px-10">
-        <Link href={courseSelected.href} className="w-full">
+        <Link href={courseSelected.href} target="_blank" className="w-full">
           <Button variant="shadow" className="w-full bg-blue-600">
             Notes & Question papers
           </Button>
