@@ -33,22 +33,22 @@
     "courses": [
       {
         "name": "Data Structures using C",
-        "href": "/courses/sem-2/data-structures-using-c",
+        "href": "https://drive.google.com/drive/folders/1NyHKb8ncsBpeLFbunBpWHq6ypy8tSL69?usp=drive_link",
         "description": "Study of fundamental data structures and their implementation using the C programming language."
       },
       {
         "name": "Object Oriented Concepts using JAVA",
-        "href": "/courses/sem-2/object-oriented-concepts-using-java",
+        "href": "https://drive.google.com/drive/folders/17d6IhJ5PPz4KphtQrBQIu75y0dOt3qhm?usp=drive_link",
         "description": "Introduction to object-oriented programming concepts using the JAVA programming language."
       },
       {
         "name": "Discrete Mathematical Structures",
-        "href": "/courses/sem-2/discrete-mathematical-structures",
+        "href": "https://drive.google.com/drive/folders/1oDd0FeieQh-VfvIXzQwEk1giIJ4A5JzK?usp=drive_link",
         "description": "Exploration of discrete mathematical concepts, including logic, set theory, and graph theory."
       },
       {
         "name": "Applied Statistics",
-        "href": "/courses/sem-2/applied-statistics",
+        "href": "https://drive.google.com/drive/folders/1ooAQjBCrvQrvHxje1QflF_1fXxI4ZM9r?usp=drive_link",
         "description": "Application of statistical methods to real-world problems, emphasizing practical data analysis and interpretation."
       }
     ]
@@ -60,22 +60,22 @@
     "courses": [
       {
         "name": "Database Management System",
-        "href": "/courses/sem-3/database-management-system",
+        "href": "https://drive.google.com/drive/folders/14jpQHxmJg1ukfg3lwmhdNfhV7Z2bQcDU?usp=drive_link",
         "description": "Study of principles and techniques for designing, implementing, and managing database systems."
       },
       {
         "name": "C# and DOTNET Framework",
-        "href": "/courses/sem-3/c-sharp-and-dotnet-framework",
+        "href": "https://drive.google.com/drive/folders/1yS4j0uV-m3ap4N8JgQzFVJvSFtfqg6_A?usp=drive_link",
         "description": "Comprehensive exploration of the C# programming language and the DOTNET framework for building Windows applications."
       },
       {
         "name": "Operating System Concepts",
-        "href": "/courses/sem-3/operating-system-concepts",
+        "href": "https://drive.google.com/drive/folders/1V3DJtRzVVszjDy2eyauGh45y0G3XvaMk?usp=drive_link",
         "description": "Introduction to fundamental concepts and principles underlying modern operating systems."
       },
       {
         "name": "Computer Oriented Numeric Analysis",
-        "href": "/courses/sem-3/computer-oriented-numeric-analysis",
+        "href": "https://drive.google.com/drive/folders/12SJC5S6OJbjE6NI0M0rBGF-fMGsMELqh?usp=drive_link",
         "description": "Application of numerical methods to solve mathematical problems using computers, emphasizing algorithm development and analysis."
       }
     ]
@@ -87,22 +87,22 @@
     "courses": [
       {
         "name": "Python Programming",
-        "href": "/courses/sem-4/python-programming",
+        "href": "https://drive.google.com/drive/folders/1nyiLjhqT41kl9eMJqaJbNh13DkmJqape?usp=drive_link",
         "description": "Introduction to the Python programming language, covering syntax, data structures, and basic programming concepts."
       },
       {
         "name": "Computer Multimedia & Animation",
-        "href": "/courses/sem-4/computer-multimedia-and-animation",
+        "href": "https://drive.google.com/drive/folders/1HuNukm2AkB1xmiYeWu2cSEwOLi9knoRy?usp=drive_link",
         "description": "Exploration of multimedia principles and animation techniques, including graphics, audio, and video."
       },
       {
         "name": "Computer Communication & Networks",
-        "href": "/courses/sem-4/computer-communication-and-networks",
+        "href": "https://drive.google.com/drive/folders/1ljwL30lfHDE9jrzG_sPOd8ziXAhiTOnm?usp=drive_link",
         "description": "Study of computer networks, communication protocols, and the principles of data transmission."
       },
       {
         "name": "OE (Operating Environment)",
-        "href": "/courses/sem-4/oe-operating-environment",
+        "href": "https://drive.google.com/drive/folders/1SscTQgKXmK7QMw6KkHgWhlaAjaqN6NCG?usp=drive_link",
         "description": "Overview of the operating environment, including system configuration, file management, and user interfaces."
       }
     ]
@@ -113,23 +113,23 @@
     "slug": "sem-5",
     "courses": [
       {
-        "name": "Design and Analysis of Algorithms",
-        "href": "/courses/sem-5/internet-technologies",
-        "description": "Designing and developing  of Algorithms"
+        "name": "Internet Technologies",
+        "href": "https://drive.google.com/drive/folders/1hapM22-Qtl4YPlhdztHvoOFF1VM-XzgC?usp=drive_link",
+        "description": "Examination of technologies and protocols underlying the Internet, including web development, networking, and security."
       },
       {
         "name": "Statistical Computing & R Programming",
-        "href": "/courses/sem-5/statistical-computing-and-r-programming",
+        "href": "https://drive.google.com/drive/folders/19RkYjm-muupoI90j38oSSd8oVnUZ3x25?usp=drive_link",
         "description": "Application of statistical methods using the R programming language, emphasizing data analysis and visualization."
       },
       {
         "name": "Software Engineering",
-        "href": "/courses/sem-5/software-engineering",
+        "href": "https://drive.google.com/drive/folders/1Ahh5MlM-0FZ_dDwLPHY_gimn1Kjtbhni?usp=drive_link",
         "description": "Comprehensive study of software development processes, methodologies, and best practices."
       },
       {
         "name": "Cyber Security",
-        "href": "/courses/sem-5/cyber-security",
+        "href": "https://drive.google.com/drive/folders/1H2OPMl9L615CTkON28s9M-ZKVVPliiBF?usp=drive_link",
         "description": "Exploration of principles and practices for securing computer systems and networks against cyber threats and attacks."
       }
     ]
@@ -141,12 +141,12 @@
     "courses": [
       {
         "name": "PHP & MySQL",
-        "href": "/courses/sem-6/php-and-mysql",
+        "href": "https://drive.google.com/drive/folders/1SnkdI1oDVwaY6MSlAzbzoxPyp3p0IfxA?usp=drive_link",
         "description": "In-depth study of web development using PHP programming language and MySQL database management system."
       },
       {
         "name": "Artificial Intelligence & Machine Learning",
-        "href": "/courses/sem-6/artificial-intelligence-and-machine-learning",
+        "href": "https://drive.google.com/drive/folders/1ZGZeUruBdZqnu0JPsZZ9_-VxvFak0gRx?usp=drive_link",
         "description": "Exploration of artificial intelligence and machine learning concepts, algorithms, and applications in computer systems."
       }
     ]
