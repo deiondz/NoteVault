@@ -100,7 +100,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/deiondz",
+    github: "https://github.com/deiondz/NoteVault",
     twitter: "https://twitter.com/Deion_Dz",
     discord: "https://discord.gg/2FSahA5JGX",
     sponsor: "https://pay.upilink.in/pay/deiondsouza12@okaxis?am=10",
