@@ -1,14 +1,5 @@
-import {
-  Button,
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownTrigger,
-  Input,
-} from "@nextui-org/react";
 import axios from "axios";
 import Link from "next/link";
-import React from "react";
 
 export const metadata = {
   title: "Question Papers",

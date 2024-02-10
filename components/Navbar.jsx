@@ -1,44 +1,38 @@
 "use client";
-import {
-  Navbar as NextUINavbar,
-  NavbarContent,
-  NavbarMenu,
-  NavbarMenuToggle,
-  NavbarBrand,
-  NavbarItem,
-  NavbarMenuItem,
-} from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
-import { CiSearch } from "react-icons/ci";
+import {
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+  Navbar as NextUINavbar,
+} from "@nextui-org/navbar";
 
 import { Input } from "@nextui-org/input";
 import {
-  Divider,
   Dropdown,
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalHeader,
   Tooltip,
   useDisclosure,
 } from "@nextui-org/react";
 import { link as linkStyles } from "@nextui-org/theme";
 
 import { siteConfig } from "@/config/site";
-import NextLink from "next/link";
 import clsx from "clsx";
+import NextLink from "next/link";
 
 import {
-  TwitterIcon,
-  GithubIcon,
   DiscordIcon,
+  GithubIcon,
   HeartFilledIcon,
   SearchIcon,
+  TwitterIcon,
 } from "@/components/icons";
 import ModalSearchBox from "./ModalSearchBox";
 

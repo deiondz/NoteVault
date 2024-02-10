@@ -1,18 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/no-unescaped-entities */
-import { DiscordIcon, GithubIcon, TwitterIcon } from "@components/icons";
+import { GithubIcon, TwitterIcon } from "@components/icons";
 import { siteConfig } from "@config/site";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  Chip,
-  Link,
-} from "@nextui-org/react";
+import { Card, CardBody, Chip, Link } from "@nextui-org/react";
 import Image from "next/image";
-import React from "react";
 
 function Twitter(props) {
   return (

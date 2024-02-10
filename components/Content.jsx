@@ -1,17 +1,9 @@
 "use client";
-import { useState } from "react";
-import Sidebar from "./sidebar";
-import {
-  Card,
-  CardBody,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalHeader,
-  useDisclosure,
-} from "@nextui-org/react";
+import { Card, CardBody, useDisclosure } from "@nextui-org/react";
 import { Drawer } from "antd";
-import { MobileOnlyView, isDesktop } from "react-device-detect";
+import { useState } from "react";
+import { isDesktop } from "react-device-detect";
+import Sidebar from "./sidebar";
 
 export default function Content(props) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();

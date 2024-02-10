@@ -1,4 +1,3 @@
-import InputBox from "@components/HeroInput";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 export const metadata = {
